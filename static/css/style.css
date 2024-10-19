@@ -1,0 +1,22 @@
+.alert {
+    font-weight: bold; /* Make alert messages bold */
+}
+
+.btn-success {
+    background-color: #1e7e34; /* Customize button color */
+    border-color: #1e7e34; /* Customize border color */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34; /* Darker border on hover */
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}

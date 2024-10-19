@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="text-center text-success">Lung Cancer Detection</h1>
+
+{% for message in get_flashed_messages() %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+{% endfor %}
+
+<form method="POST" enctype="multipart/form-data" class="p-4 border border-info rounded bg-light">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">
+        {{ form.image.label(class="form-label text-success") }}
+        {{ form.image(class="form-control bg-white border border-success") }}
+    </div>
+    <div class="text-center">
+        {{ form.submit(class="btn btn-success") }}
+    </div>
+</form>
+
+{% if image_data %}
+<br/>
+    <h2 class="text-center text-success">Uploaded Image:</h2>
+    <div class="text-center">
+        <img src="{{ image_data }}" alt="Uploaded Image" class="img-fluid" style="max-width: 300px; max-height: 300px;">
+    </div>
+{% endif %}
+
+{% if prediction %}
+<br/>
+    <h2 class="text-center text-success">Prediction Result:</h2>
+    <div class="text-center">
+        <p class="alert alert-info">{{ prediction }}</p>
+    </div>
+{% endif %}
+{% endblock %}
