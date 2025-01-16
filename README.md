@@ -65,28 +65,3 @@ Here’s a preview of the web interface for the Lung Cancer Detection project:
 
 The web interface is developed using Flask and HTML/CSS. It allows users to upload images and display the result.
 
-### HTML Template (upload.html):
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lung Cancer Detection</title>
-    <link rel="stylesheet" href="static/style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Lung Cancer Detection</h1>
-        <form action="/" method="POST" enctype="multipart/form-data">
-            <label for="image">Upload an Image</label>
-            <input type="file" name="image" required>
-            <button type="submit">Upload</button>
-        </form>
-        {% if prediction %}
-        <h2>Prediction: {{ prediction }}</h2>
-        {% endif %}
-    </div>
-</body>
-</html>
