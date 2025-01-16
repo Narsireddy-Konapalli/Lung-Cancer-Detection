@@ -1,4 +1,4 @@
-# Lung Cancer Detection Using Deep Learning
+# Lung Cancer Detection 
 
 This project utilizes Deep Learning techniques to classify lung cancer from medical images (e.g., X-rays, CT scans). The model is trained using convolutional neural networks (CNNs) to detect cancerous cells in lung images. A Flask-based web interface is provided, where users can upload images for classification. The results are displayed on the web page after the model processes the image.
 
@@ -59,7 +59,7 @@ To run the project locally, follow these steps:
 
 Here’s a preview of the web interface for the Lung Cancer Detection project:
 
-![Lung Cancer Detection Interface](https://github.com/yourusername/lung-cancer-detection/blob/main/screenshots/interface_screenshot.png)
+![Lung Cancer Detection Interface](https://github.com/user-attachments/assets/d9dd6340-052d-44f7-aacf-b1fe02559185)
 
 ## Flask Web Interface
 
