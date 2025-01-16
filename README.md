@@ -17,7 +17,7 @@ To run the project locally, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/lung-cancer-detection.git
+    git clone https://github.com/Narsireddy-Konapalli/Lung-Cancer-Detection.git
     cd lung-cancer-detection
     ```
 
